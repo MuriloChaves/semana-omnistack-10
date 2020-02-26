@@ -2,6 +2,8 @@
 const express = require('express')
 // importanto mongo
 const mongoose = require('mongoose')
+// importando cors
+const cors = require('cors')
 // importando as rotas
 const routes = require('./routes')
 
@@ -16,6 +18,8 @@ mongoose.connect(
     }
 )
 
+// cors para liberar o acesso pra todo tipo de aplicação
+app.use(cors())
 // entender requisições no formato json - TEM Q VIR ANTES
 app.use(express.json())
 // atribuindo as rotas

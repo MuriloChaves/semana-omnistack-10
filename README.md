@@ -117,6 +117,25 @@ yarn add express
 touch index.js
 ```
 
+> Startar o projeto web com react
+
+```sh
+yarn create react-app web
+```
+
+OU
+
+```sh
+npx create-react-app web
+```
+
+> Inicializar o projeto react
+
+```sh
+yarn start
+```
+
+
 ## Arquitetura da Aplicação
 
 ### JS Back-end
@@ -146,4 +165,12 @@ touch index.js
 // Body: request.body (dados para criaçnao ou alteração de um registro)
 
 // MongoDB (não-relacional)
+```
+
+```js
+// 3 conceitos principais do react
+
+// componente: bloco isolado do html, css e js, o qual não interfere no restante da aplicação
+// estado: informações que um componente PAI passa para o componente FILHO
+// propriedade: informações mantidas pelo componente (lembrar: imutabilidade)
 ```
